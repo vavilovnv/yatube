@@ -15,15 +15,6 @@ def index(request):
     }    
     return render(request, template, context)
 
-# Главная страница
-# def group_list(request):    
-#     template = 'posts/group_list.html'
-#     return render(request, template)
-
-# В url мы ждем параметр, и его передаем в функцию для использования
-# def group_posts(request, slug):
-#     return HttpResponse(f'Обработка запроса группы: {slug}')
-
 # Страница с группами проекта Yatube
 def group_posts(request, slug):    
     template = 'posts/group_list.html'
@@ -36,3 +27,8 @@ def group_posts(request, slug):
         'posts': posts,
     }  
     return render(request, template, context)    
+
+def group_list(request):    
+    template = 'posts/group_list.html'
+    return render(request, template)
+
