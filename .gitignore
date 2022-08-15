@@ -133,3 +133,6 @@ vscode/
 .vscode/
 idea/
 .idea/
+
+migrations/
+media/
